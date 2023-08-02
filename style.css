@@ -98,6 +98,19 @@ button:hover, button:focus {
     font-size: 1.5em;
 }
 
+.footer {
+    position: fixed;
+    bottom: .5em;
+}
+.footer a {
+    font-size: 2em;
+    color: var(--accent);
+    transition: .3s;
+}
+
+.footer a:hover {
+    color: var(--primary);
+}
 /* Responsiveness */
 
 @media (max-width:600px) {

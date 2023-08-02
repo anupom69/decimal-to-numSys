@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS PRACTICE</title>
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+<body>
+    <h2 class="title">Convert Decimal to <span>Anything</span></h2>
+    <input type="number" placeholder="Decimal Value" id="decimalValue" required>
+    <label class="label" for="convertTo">Convert to: </label>
+    <select name="select" id="convertTo">
+        <option class="binary" value="Binary">Binary</option>
+        <option class="octal" value="Octal">Octal</option>
+        <option class="hexadecimal" value="Hexadecimal">Hexadecimal</option>
+    </select>
+    <button type="submit" onclick="getValue()">Convert</button>
+
+    <div class="result">
+        In <span>___</span> : <p style="display: inline;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

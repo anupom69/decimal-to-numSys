@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #0e1116;
+    --background: #eceff3;
+    --primary: #44566f;
+    --secondary: #d9dfe8;
+    --accent: #5d7698;
+}
+
+body {
+    background-color: var(--background);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    color: var(--accent);
+    font-size: 2.5em;
+    margin-bottom:  1em;
+    text-align: center;
+}
+
+::placeholder {
+    color: var(--primary);
+    text-align: center;
+}
+
+#decimalValue {
+    height: 2em;
+    width: 20em;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: .5em;
+    border: 2px solid var(--secondary);
+}
+
+#decimalValue:hover, #decimalValue:focus {
+    outline: none;
+    border: 2px solid var(--primary);
+    transition: .3s;
+}
+
+.label {
+    font-size: 1.3em;
+    color: var(--text);
+    margin-top: .5em;
+}
+
+#convertTo {
+    color: var(--primary);
+    border-radius: .5em;
+    width: 10em;
+    height: 2em;
+    border: 2px solid var(--secondary);
+    font-size: 1.3em;
+    text-align: center;
+    transition: .25s;
+}
+#convertTo:hover, #convertTo:focus {
+    border: 2px solid var(--primary);
+}
+
+
+option.binary {
+    color: var(--primary);
+}
+option.octal {
+    color: var(--accent);
+}
+
+button {
+    background-color: var(--background);
+    margin: .8em 0;
+    font-size: 1em;
+    padding: .2em 1em;
+    border-radius: .5em;
+    transition: .25s;
+    border-color: var(--accent);
+}
+
+button:hover, button:focus {
+    background-color: var(--primary);
+    color: var(--background);
+    border-color: transparent;
+    box-shadow: 0 0 5em 0 var(--secondary);
+}
+
+.result {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+/* Responsiveness */
+
+@media (max-width:600px) {
+    html {
+        font-size: .8rem;
+    }
+}
